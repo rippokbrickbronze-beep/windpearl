@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "windpearlcatch",
+  "version": "${version}",
+  "name": "WindPearlCatch",
+  "description": "One-bind pearl catch: throws a pearl, swaps to a wind charge, silent-aims and fires it into the pearl's path.",
+  "authors": ["lumi"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.lumi.windpearl.WindPearlCatchClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
