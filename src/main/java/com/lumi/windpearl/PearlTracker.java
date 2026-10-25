@@ -40,7 +40,7 @@ public final class PearlTracker {
 
             Track t = tracks.computeIfAbsent(pearl.getUuid(), k -> new Track());
             t.id = pearl.getUuid();
-            t.pos = pearl.getPos();
+            t.pos = new Vec3d(pearl.getX(), pearl.getY(), pearl.getZ());
             t.vel = pearl.getVelocity();
             t.ageTicks++;
             t.lastSeen = now;
